@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Scanner;
 
 /**
  * @ClassName testCalendar
@@ -16,7 +17,9 @@ import java.util.GregorianCalendar;
  **/
 public class testCalendar {
     public static void main(String[] args) throws ParseException {
-        String inputStr = "2020-4-15";
+        System.out.print("请输入一个日期：格式为(2019-11-19)");
+        Scanner scanner = new Scanner(System.in);
+        String inputStr = scanner.nextLine();
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         Date date = df.parse(inputStr);
         //###转成date对象，再转成日历类
