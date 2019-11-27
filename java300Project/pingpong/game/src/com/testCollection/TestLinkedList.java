@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @ClassName TestLinkedlist
- * @Description /手写链表（增删很快，查找慢）
+ * @Description /手写链表（增删很快，查找慢）。此处是一个双向链表（除头尾节点未串起来，其余节点是双向链）
  * 1、定义前后Node 和size(链表不关注具体的element，element由每个Node存储);重写toString打印
  * 2、add方法；get、set方法
  * 3、remove方法（注意删除首位末位的特殊性）
